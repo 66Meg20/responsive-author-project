@@ -108,7 +108,7 @@ footer {
     ),
     url(../images/footer-image.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding: 100px 0;
 }
 footer h3 {
