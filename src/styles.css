@@ -6,10 +6,15 @@ body {
   margin: 0 auto;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
+
+.text-center {
+  text-align: center;
+}
+
 .responsive-image {
   border-radius: 20px;
   max-width: 100%;
@@ -23,6 +28,9 @@ section {
 }
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -99,6 +107,78 @@ main p {
   color: #f9f7fe;
   opacity: 0.7;
 }
+main .secondary {
+  background: #1e1b2c;
+}
+.secondary h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.secondary h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.card-body h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
+}
+.card-body p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+.card-body h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  color: #272044;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+.btn {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  background: #fb5c8d;
+  padding: 16px;
+  text-decoration: none;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
 
 footer {
   color: white;
@@ -108,7 +188,8 @@ footer {
     ),
     url(../images/footer-image.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center top 55%;
   padding: 100px 0;
 }
 footer h3 {
@@ -155,5 +236,8 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  footer {
+    background-position: 25% 75%;
   }
 }
